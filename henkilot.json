@@ -1,0 +1,39 @@
+[
+    {
+        "tyontekijatunnus": "TUKE001",
+        "etunimi": "Matti",
+        "sukunimi": "Meikalainen",
+        "osasto": "TUKE:tuotekehittely",
+        "tyonimike": "ohjelmoija",
+        "sahkopostiosoite": "matti.meikalainen@gmail.com",
+        "kuukausipalkka": "3000",
+        "tyon_aloitus_pvm": "2019-05-26"
+    },
+    {
+        "tyontekijatunnus": "TUKE002",
+        "etunimi": "Maija",
+        "sukunimi": "Meikalainen",
+        "osasto": "TUKE:tuotekehittely",
+        "tyonimike": "esihenkilo",
+        "sahkopostiosoite": "maija.meikalainen@gmail.com",
+        "kuukausipalkka": "4000",
+        "tyon_aloitus_pvm": "2004-12-03",
+        "alaiset": [
+            "TUKE001"
+        ]
+    },
+    {
+        "tyontekijatunnus": "TIKA001",
+        "etunimi": "Pette",
+        "sukunimi": "Petterson",
+        "osasto": "TIKA:tietokanta",
+        "tyonimike": "suunnittelija",
+        "sahkopostiosoite": "pette.petterson@gmail.com",
+        "kuukausipalkka": "3000",
+        "tyon_aloitus_pvm": "2022-02-02",
+        "alaiset": [
+            "TUKE002",
+            "TUKE001"
+        ]
+    }
+]
