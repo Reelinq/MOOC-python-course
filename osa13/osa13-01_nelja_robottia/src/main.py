@@ -1,0 +1,25 @@
+# Tämän osan tehtävissä ei ole automaattisia testejä, vaan testi antaa pisteet
+# automaattisesti, kun lähetät ratkaisun palvelimelle. Lähetä ratkaisu vasta
+# sitten, kun se on valmis ja vastaa tehtävänannon vaatimuksia. Vaikka tehtävissä
+# ei ole testejä, kurssin henkilökunta näkee lähetetyt ratkaisut.
+
+# TEE RATKAISUSI TÄHÄN:
+
+import pygame
+
+pygame.init()
+naytto = pygame.display.set_mode((640, 480))
+
+robo = pygame.image.load("robo.png")
+
+naytto.fill((0, 0, 0))
+naytto.blit(robo, (0, 0))
+naytto.blit(robo, (640-robo.get_width(), 0))
+naytto.blit(robo, (0, 480-robo.get_height()))
+naytto.blit(robo, (640-robo.get_width(), 480-robo.get_height()))
+pygame.display.flip()
+
+while True:
+    for tapahtuma in pygame.event.get():
+        if tapahtuma.type == pygame.QUIT:
+            exit()
